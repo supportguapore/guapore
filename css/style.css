@@ -174,14 +174,21 @@ hr {
   
 }
 
-.card-body.tela.animated.end-card { 
+.card-body.tela.animated.end-card {
     background-color: #0f111d; 
-    border-radius: 20px; transition: background-color 1s ease; 
-    /* Adiciona a transição */ 
-} 
+    border-radius: 20px;
+    transition: background-color 1s ease; /* Adiciona a transição */
+}
+
 .success-background {
-     background-color: #F7F7F7; /* Cor de fundo ao concluir */ 
-    
+    background-color: #F7F7F7; /* Cor de fundo ao concluir */
+}
+
+.loading {
+    align-items: center; 
+    justify-items: center; 
+    text-align: center; 
+    border-radius: 20px;
 }
 
 .failed-background {
