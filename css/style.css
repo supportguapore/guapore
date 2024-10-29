@@ -173,3 +173,18 @@ hr {
     background-color: #ccc; /* Cinza claro */ color: #666; /* Cinza escuro */ cursor: not-allowed;
   
 }
+
+.card-body.tela.animated.end-card { 
+    background-color: #0f111d; 
+    border-radius: 20px; transition: background-color 1s ease; 
+    /* Adiciona a transição */ 
+} 
+.success-background {
+     background-color: #F7F7F7; /* Cor de fundo ao concluir */ 
+    
+}
+
+.failed-background {
+    background-color: #FDFDFD; /* Cor de fundo ao concluir */ 
+   
+}
