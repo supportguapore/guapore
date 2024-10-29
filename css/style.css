@@ -181,7 +181,7 @@ hr {
 }
 
 .success-background {
-    background-color: #F7F7F7; /* Cor de fundo ao concluir */
+    background-color: #F7F7F7 !important; /* Cor de fundo ao concluir */
 }
 
 .loading {
@@ -192,6 +192,6 @@ hr {
 }
 
 .failed-background {
-    background-color: #FDFDFD; /* Cor de fundo ao concluir */ 
+    background-color: #FDFDFD !important; /* Cor de fundo ao concluir */ 
    
 }

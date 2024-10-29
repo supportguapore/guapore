@@ -76,21 +76,20 @@ class FormSubmit {
           },
           body: JSON.stringify(this.getFormObject()),
         });
-        this.displaySuccess();
         // Atualiza a mensagem após o envio
         $('#sendingMessage').text('Informações enviadas, obrigado por aguardar :)');
         $('#titleSendingMessage').text('Tudo certo!'); 
         $('#returnButton').show(); // Mostra o botão para retornar à página principal 
-        $('#img-loading').html('<img src="success.gif" alt="Concluído">');
+        $('#img-loading').html('<img src=".img/success.gif" alt="Concluído">');
         document.getElementById('tela9').classList.add('success-background');
       } catch (error) {
-        this.displayError();
         // Atualiza a mensagem se falhar
         $('#titleSendingMessage').text('Oops, parece que algo deu errado :('); 
         $('#sendingMessage').text('Tente preencher novamente recarregando a página no botão abaixo.');
-        $('#returnButton').show(); // Mostra o botão para recarregar a página
-        $('#img-loading').html('<img src="failed.gif" alt="Failed">');
+        $('#img-loading').html('<img src=".img/failed.gif" alt="Failed">');
         document.getElementById('tela9').classList.add('failed-background');
+        showReloadButton();
+
         throw new Error(error);
       } finally { 
          
@@ -113,4 +112,11 @@ class FormSubmit {
     error: "<h1 class='error'>Não foi possível enviar seu formulário.</h1>",
   });
   formSubmit.init();
-  
+
+function showReloadButton() {
+  $('#reloadPage').show(); // Mostra o botão
+  $('#reloadPage').on('click', function() { 
+    location.reload(); 
+    // Recarrega a página quando o botão é clicado 
+    }); 
+}
