@@ -22,7 +22,7 @@ class FormSubmit {
     
       // Recupera manualmente os valores dos campos
       formObject["_cc"] = document.querySelector("#_cc").value;
-      formObject["_subject"] = document.querySelector("#_subject").value;
+      formObject["_subject"] = document.querySelector("#_subject").value + document.querySelector("#recoverRazao").placeholder;
       formObject["Fornecedor"] = document.querySelector("#recoverFornecedor").placeholder;
       formObject["Vendedor"] = document.querySelector("#recoverVendedor").placeholder;
       formObject["Taxas"] = document.querySelector("#recoverTaxas").placeholder;
