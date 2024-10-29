@@ -77,14 +77,21 @@ class FormSubmit {
           body: JSON.stringify(this.getFormObject()),
         });
         this.displaySuccess();
-      } catch (error) {
-        this.displayError();
-        throw new Error(error);
-      } finally { 
-        // Atualiza a mensagem após o envio 
+        // Atualiza a mensagem após o envio
         $('#sendingMessage').text('Informações enviadas, obrigado por aguardar :)');
         $('#titleSendingMessage').text('Tudo certo!'); 
         $('#returnButton').show(); // Mostra o botão para retornar à página principal 
+      } catch (error) {
+        this.displayError();
+        // Atualiza a mensagem se falhar
+        $('#titleSendingMessage').text('Oops, parece que algo deu errado :('); 
+        $('#sendingMessage').text('Tente preencher novamente recarregando a página no botão abaixo.');
+        $('#returnButton').show(); // Mostra o botão para recarregar a página
+        throw new Error(error);
+      } finally { 
+         
+       
+       
         }
     }
   
