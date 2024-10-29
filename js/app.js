@@ -21,15 +21,15 @@ class FormSubmit {
       const formObject = {};
     
       // Recupera manualmente os valores dos campos
-      formObject["recoverFornecedor"] = document.querySelector("#recoverFornecedor").placeholder;
-      formObject["recoverVendedor"] = document.querySelector("#recoverVendedor").placeholder;
-      formObject["recoverTaxas"] = document.querySelector("#recoverTaxas").placeholder;
-      formObject["mcc"] = document.querySelector("#mcc").placeholder;
-      formObject["qtdMaquininha"] = document.querySelector("#qtdMaquininha").placeholder;
-      formObject["recoverCadunico"] = document.querySelector("#recoverCadunico").placeholder;
-      formObject["recoverFaturamento"] = document.querySelector("#recoverFaturamento").placeholder;
-      formObject["recoverRazao"] = document.querySelector("#recoverRazao").placeholder;
-      formObject["recoverFantasia"] = document.querySelector("#recoverFantasia").placeholder;
+      formObject["Fornecedor"] = document.querySelector("#recoverFornecedor").placeholder;
+      formObject["Vendedor"] = document.querySelector("#recoverVendedor").placeholder;
+      formObject["Taxas"] = document.querySelector("#recoverTaxas").placeholder;
+      formObject["MCC"] = document.querySelector("#mcc").placeholder;
+      formObject["Maquininhas"] = document.querySelector("#qtdMaquininha").placeholder;
+      formObject["Cadastro único"] = document.querySelector("#recoverCadunico").placeholder;
+      formObject["Faturamento"] = document.querySelector("#recoverFaturamento").placeholder;
+      formObject["Razao"] = document.querySelector("#recoverRazao").placeholder;
+      formObject["Fantasia"] = document.querySelector("#recoverFantasia").placeholder;
       formObject["recoverEmail"] = document.querySelector("#recoverEmail").placeholder;
       formObject["recoverTipoContato"] = document.querySelector("#recoverTipoContato").placeholder;
       formObject["recoverCpfcontato"] = document.querySelector("#recoverCpfcontato").placeholder;
