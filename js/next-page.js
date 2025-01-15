@@ -8,10 +8,10 @@ $(document).ready(function(){
       if (currentScreen === 2) {
         const polPrivacidadeChecked = $('#polPrivacidade').prop('checked');
         const termosUsoChecked = $('#termosUso').prop('checked');
-        const polPgtoChecked = $('#polPgto').prop('checked');
+        
 
         // Se algum termo não estiver marcado, exibe uma mensagem de alerta e retorna
-        if (!polPrivacidadeChecked || !termosUsoChecked || !polPgtoChecked) {
+        if (!polPrivacidadeChecked || !termosUsoChecked ) {
           alert('Por favor, concorde com todos os termos antes de continuar.');
           return;
         }
@@ -21,6 +21,7 @@ $(document).ready(function(){
       currentScreen++;
       $('#tela' + currentScreen).show();
     }
+
   });
 
   $('.prev').click(function() {

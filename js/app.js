@@ -80,13 +80,13 @@ class FormSubmit {
         $('#sendingMessage').text('Informações enviadas, obrigado por aguardar :)');
         $('#titleSendingMessage').text('Tudo certo!'); 
         $('#returnButton').show(); // Mostra o botão para retornar à página principal 
-        $('#img-loading').html('<img src=".img/success.gif" alt="Concluído">');
+        $('#img-loading').html('<img src="img/success.gif" alt="Concluído">');
         document.getElementById('tela9').classList.add('success-background');
       } catch (error) {
         // Atualiza a mensagem se falhar
         $('#titleSendingMessage').text('Oops, parece que algo deu errado :('); 
         $('#sendingMessage').text('Tente preencher novamente recarregando a página no botão abaixo.');
-        $('#img-loading').html('<img src=".img/failed.gif" alt="Failed">');
+        $('#img-loading').html('<img src="img/failed.gif" alt="Failed">');
         document.getElementById('tela9').classList.add('failed-background');
         showReloadButton();
 

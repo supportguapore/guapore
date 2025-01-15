@@ -67,35 +67,143 @@
               </div>
             </div>
             <div class="row mt-3 align-items-center">
-              <div class="col-12 col-md-5 mx-auto mt-5">
-                <img src="./img/terms.svg" alt="Form Title" class="form-title">
-              </div>
-              <div class="col-12 col-md-5 mx-auto mt-5 align-items-center justify-content-center">
-                <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="polPrivacidade" required>
-                  <label class="form-check-label text-sm-left" for="polPrivacidade">
-                    Concordo com a <a href="#" style="text-decoration: underline;">Política de Privacidade</a>
-                  </label>
+                <div class="col-12 col-md-5 mx-auto mt-5">
+                  <img src="./img/terms.svg" alt="Form Title" class="form-title">
                 </div>
-                <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="termosUso" required>
-                  <label class="form-check-label" for="termosUso">
-                    Concordo com os Termos de uso
-                  </label>
+                <div class="col-12 col-md-5 mx-auto mt-5 align-items-center justify-content-center">
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="polPrivacidade" required>
+                    <label class="form-check-label text-sm-left" for="polPrivacidade">
+                      Concordo com a <a href="#modalpp" data-toggle="modal" id="openModalpp" style="text-decoration: underline;">Política de Privacidade</a>
+                    </label>
+                  <!--Modal pp-->
+                    <div id="modalpp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalPolPri" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Política de Privacidade</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-justify">
+                            Última atualização: 13/01/2025<br>
+                            <br>
+                            A sua privacidade é muito importante para nós. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações que você fornece ao acessar e utilizar o site "Formulário de Cadastro" para atualizar seu cadastro.<br>
+                            <br>
+                            <h5>1. Informações Coletadas</h5>
+                            Coletamos apenas as informações pessoais necessárias para o processo de atualização de cadastro. Os dados solicitados podem incluir, mas não estão limitados a: <br>
+                            <br>
+                            1. Nome completo<br>
+                            2. Endereço de e-mail<br>
+                            3. Telefone<br>
+                            4. Informações adicionais relacionadas ao seu cadastro<br>
+                            <br>
+                            Essas informações são coletadas por meio de um formulário simples no site. <br>
+                            <br>
+                            <h5>2. Finalidade da Coleta</h5>
+                            As informações que você fornece são utilizadas exclusivamente para os seguintes fins:<br>
+                            <br>
+                            1. Atualização do seu cadastro interno na Guaporé Vidros.<br>
+                            2. Envio das informações para o setor responsável por e-mail<br>
+                            3. Melhoria na precisão dos dados cadastrais<br>
+                            <br>
+                            <h5>3. Como as Informações São Armazenadas</h5>
+                            Os dados fornecidos são armazenados de maneira segura e são enviados diretamente para o setor responsável via e-mail. Não mantemos um banco de dados contínuo com suas informações no site.<br>
+                            <br>
+                            <h5>4. Compartilhamento de Dados</h5>
+                            Suas informações serão compartilhadas apenas com o setor responsável pela atualização de cadastro dentro da Guaporé Vidros, e serão utilizadas exclusivamente para os fins descritos nesta Política de Privacidade. Não compartilhamos seus dados com terceiros, a menos que seja necessário por força de lei ou para proteger nossos direitos legais. <br>
+                            <br>
+                            <h5>5. Segurança dos Dados</h5>
+                            Adotamos medidas razoáveis para proteger suas informações pessoais contra acesso, alteração, divulgação ou destruição não autorizados. Embora nos esforcemos para proteger os dados, nenhuma transmissão de dados pela internet é completamente segura, e não podemos garantir a segurança absoluta.<br>
+                            <br>
+                            <h5>6. Retenção de Dados</h5>
+                            As informações que você fornecer serão mantidas enquanto forem necessárias para o processo de atualização de cadastro. Caso você deseje solicitar a exclusão dos seus dados, entre em contato conosco pelo e-mail elizane.nascimento@guaporevidros-ro.com.br.<br>
+                            <br>
+                            <h5>7. Seus Direitos</h5>
+                            De acordo com a legislação aplicável, você tem o direito de:<br>
+                            
+                            1. Acessar as informações pessoais que possuímos sobre você<br>
+                            2. Solicitar a correção de quaisquer dados imprecisos<br>
+                            3. Solicitar a exclusão das suas informações, quando permitido pela legislação<br>
+                            4. Para exercer qualquer um desses direitos, entre em contato conosco pelo e-mail elizane.nascimento@guaporevidros-ro.com.br.<br>
+                            <br>
+                            <h5>8. Alterações nesta Política de Privacidade</h5>
+                            Podemos atualizar esta Política de Privacidade de tempos em tempos. Quaisquer alterações serão publicadas nesta página com a data da última atualização. Recomendamos que você consulte periodicamente esta página para se manter informado sobre como protegemos suas informações.<br>
+                            <br>
+                            <h5>9. Contato</h5>
+                            Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos suas informações pessoais, entre em contato conosco pelo e-mail elizane.nascimento@guaporevidros-ro.com.br.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="disagree1" data-dismiss="modal">Não concordo</button>
+                            <button type="button" class="btn btn-primary" id="agreeterm1" data-dismiss="modal">Eu concordo</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="termosUso" required>
+                    <label class="form-check-label" for="termosUso">
+                      Concordo com os <a href="#modaltu" data-toggle="modal" id="openModaltu" style="text-decoration: underline;">Termos de Uso</a>
+                    </label>
+                  <!--Modal tu-->
+                    <div id="modaltu" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalTerUso" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Termos de Uso</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-justify">
+                            Última atualização: 13/01/2025<br>
+                            <br>
+                            Bem-vindo ao Formulário de Cadastro! Ao acessar e utilizar este site para atualizar seu cadastro, você concorda com os seguintes Termos de Uso. Se você não concorda com algum dos termos abaixo, não utilize este site.<br>
+                            <br>
+                            <h5>1. Objetivo do Site</h5>
+                            Este site foi desenvolvido exclusivamente para a coleta e atualização de informações cadastrais, que serão enviadas para o setor responsável dentro da Guaporé Vidros. Não é necessário criar uma conta ou fornecer dados além daqueles solicitados para a atualização do seu cadastro.<br>
+                            <br>
+                            <h5>2. Coleta de Dados Pessoais</h5>
+                            Ao utilizar este site, você fornece informações pessoais com o propósito de atualizar seu cadastro interno na Guaporé Vidros. Esses dados serão enviados diretamente para o setor responsável por e-mail e serão tratados de acordo com a nossa Política de Privacidade.<br>
+                            <br>
+                            <h5>3. Proteção de Dados</h5>
+                            A coleta e o tratamento dos seus dados pessoais seguem as diretrizes estabelecidas na nossa Política de Privacidade. Recomendamos que você leia atentamente a Política de Privacidade para entender como seus dados serão utilizados e protegidos.<br>
+                            <br>
+                            <h5>4. Uso do Site</h5>
+                            Você concorda em fornecer informações precisas e completas durante o preenchimento dos campos solicitados. O site deve ser utilizado apenas para fins de atualização de cadastro, e você se compromete a não utilizá-lo para qualquer outro propósito.<br>
+                            <br>
+                            <h5>5. Responsabilidade</h5>
+                            A Guaporé Vidros não se responsabiliza por quaisquer danos ou problemas decorrentes da não conformidade com as informações fornecidas, sendo de sua responsabilidade garantir a precisão e veracidade dos dados informados.<br>
+                            <br>
+                            <h5>6. Limitação de Responsabilidade</h5>
+                            A Guaporé Vidros não será responsável por falhas técnicas no site, erros no envio das informações ou por problemas no recebimento e processamento dos dados pela equipe interna.<br>
+                            <br>
+                            <h5>7. Alterações nos Termos</h5>
+                            Reservamo-nos o direito de alterar estes Termos de Uso a qualquer momento, sem aviso prévio. Recomendamos que você consulte esta página periodicamente para verificar as atualizações.<br>
+                            <br>
+                            <h5>8. Legislação Aplicável</h5>
+                            Estes Termos de Uso são regidos pelas leis do Brasil e qualquer disputa será resolvida nos tribunais competentes deste país.<br>
+                            <br>
+                            <h5>9. Contato</h5>
+                            Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco através do e-mail elizane.nascimento@guaporevidros-ro.com.br.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="disagree2" data-dismiss="modal">Não concordo</button>
+                            <button type="button" class="btn btn-primary" id="agreeterm2" data-dismiss="modal">Eu concordo</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-check mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="polPgto" required>
-                  <label class="form-check-label" for="polPgto">
-                    Concordo com a Política de pagamentos
-                  </label>
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-end mt-4 btn-sm-align pr-0 pl-0">
+                    <button type="button" class="btn btn-secondary prev px-4 py-2 fw-normal mr-2"><i class="fa-solid fa-backward-step white-icon mr-1"></i>Retornar</button>
+                    <button type="button" class="btn btn-primary next px-4 py-2 fw-normal ml-2" id="nextBtn2">Avançar<i class="fa-solid fa-play ml-1 white-icon"></i></button>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 d-flex justify-content-end mt-4 btn-sm-align pr-0 pl-0">
-                <button type="button" class="btn btn-secondary prev px-4 py-2 fw-normal mr-2"><i class="fa-solid fa-backward-step white-icon mr-1"></i>Retornar</button>
-                <button type="button" class="btn btn-primary next px-4 py-2 fw-normal ml-2" id="nextBtn2">Avançar<i class="fa-solid fa-play ml-1 white-icon"></i></button>
-              </div>
             </div>
           </div>
           <!-- tela 3 FORNECEDOR -->
@@ -119,21 +227,15 @@
                 </div>
                 <div class="select-2-vend mb-2">
                   <label for="vendedorFornecedor" class="form-label"><span style="color: red">*</span>Qual é seu vendedor?</label>
-                  <select id="vendedorFornecedor" class="form-select unidade" oninput="verifCampos1()">
+                  <select id="vendedorFornecedor" class="form-select unidade">
                     <option selected>Escolha uma opção</option>
                   </select>
                 </div>
-                <legend class="col-form-label pt-0"><span style="color: red">*</span>A indústria vai financiar as taxas da sua maquininha?</legend>
+                <legend class="col-form-label pt-0 text-justify"><span style="color: red">*</span>A indústria (Guaporé Vidros) ficará responsável pelo pagamento das taxas de transações e/ou operações. A Vidraçaria ficará responsável pelo pagamento do aluguel da máquina de cartão no valor de R$ 65,00.<br><br>Você está de acordo? Marque a opção abaixo para continuar.</legend>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Guaporé Vidros" checked>
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="Concordo com o aluguel de R$ 65,00." oninput="verifCampos1()">
                     <label class="form-check-label" for="gridRadios1">
                       Sim.
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Eu fico responsável por elas.">
-                    <label class="form-check-label" for="gridRadios2">
-                      Não, eu fico responsável por elas.
                     </label>
                   </div>
                 </div>
@@ -404,6 +506,13 @@
                     <input type="number" id="digitoConta" class="form-control" placeholder="Ex.: 0" oninput="verifCampos5()">
                   </div>
                 </div>
+                <div class="row mcc mb-2">
+                  <label for="" class="form-label"><span style="color: red">*</span>As transações realizadas pelas máquinas de cartão serão distribuídas conforme os seguintes parâmetros: 60% para a Guaporé Vidros e 30% para o cliente.
+
+
+
+                  </label>
+                </div>
               </div>
             </div>
             <div class="row mt-4 d-flex align-items-center">
@@ -425,7 +534,7 @@
                 <h3 class="text-center p-0 mb-0 fs-1 ml-0 mt-0">Revise seus dados abaixo:</h3>
                   <input type="hidden" name="_cc" id="_cc" value="elizane.nascimento@guaporevidros-ro.com.br,comercial@systemglass.com.br">
                   <input type="hidden" name="_template" value="box">
-                  <input type="hidden" name="_subject" id="_subject" value= "Formulário de Preenchimento (Maquininhas) Cliente:">
+                  <input type="hidden" name="_subject" id="_subject" value= "Formulário de Preenchimento (Maquininhas) Cliente: ">
                   <input type="hidden" name="_captcha" value="false">
               </div>
             </div>
@@ -912,6 +1021,7 @@
   <script src="./js/select-fornecedor.js"></script>
   <script src="./js/select-estado.js"></script>
   <script src="./js/nextBtn3.js"></script>
+  <script src="./js/modal.js"></script>
 <!--script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function(){

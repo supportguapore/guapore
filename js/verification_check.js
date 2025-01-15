@@ -12,9 +12,10 @@
 
 function verifCampos1() { 
     const opt1 = document.getElementById("unidadeFornecedor").value; 
-    const opt2 = document.getElementById("vendedorFornecedor").value; 
+    const opt2 = document.getElementById("vendedorFornecedor").value;
+    const opt3 = document.getElementById("gridRadios1").checked; 
     const botaoEnviar = document.getElementById("nextBtn3"); 
-    if (opt1 && opt2) { 
+    if (opt1 && opt2 && opt3) { 
         botaoEnviar.disabled = false; 
     } else { 
         botaoEnviar.disabled = true; 
